@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ポートフォリオ①" />
+    <!-- reset.css ress (デフォルトのスタイリングをリセットする機能)-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+     href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" 
+     rel="stylesheet"
+   />
+    <title>ポートフォリオ①</title>
+ </head>
+ <body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-contener">
+        <h1 class="site-title">
+            <a href="#"> Star <span>Portfolio</span></a> <!-- spanタグで片方の文字の色を変えることができる -->
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li>
+                    <a 
+                     href="https://www.Instagram.com"
+                     target="_blank"
+                     rel="noopener norefeferrer"
+                     ><img src="./img/insta.png" alt="Instagram" class="icon"
+                /></a>
+                </li>
+            </ul>
+        </nav>
+     </div>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+        <picture>
+            <source media="(max-width: 600px)" srcset="./img-sp.jpg" />
+            <img src="./img/main-pc.jpg" alt="" />
+        </picture>
+    </div>
+
+    <!-- about -->
+    <section id="about" class="wrapper">
+        <h2 class="sec-title">About</h2>
+        <ul>
+            <li>株式会社Star</li>
+            <li>WEB製作会社として設立</li>
+            <li>WEBサイト製作など承ります</li>
+            <li>メールアドレス：xxxxxxx@xx.com</li>
+        </ul>
+        <p>
+            お気軽にお問い合わせください。
+        </p>
+    </section>
+
+
+    <!-- works -->
+    <section id="works" class="wrapper">
+        <h2 class="sec-title">Works</h2>
+        <ul>
+            <li><img src="./img/works1.jpg" alt="works1" /></li>
+            <li><img src="./img/works2.jpg" alt="works2" /></li>
+            <li><img src="./img/works3.jpg" alt="works3" /></li>
+            <li><img src="./img/works4.jpg" alt="works4" /></li>
+            <li><img src="./img/works5.jpg" alt="works5" /></li>
+            <li><img src="./img/works6.jpg" alt="works6" /></li>
+        </ul>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="wrapper">
+        <h2 class="sec-title">News</h2>
+        <dl>
+            <dt>2023/11/01</dt>
+            <dd>プログラミングの勉強始めました</dd>
+            <dt>2023/12/05</dt>
+            <dd>html/CSSの勉強始めました</dd>
+            <dt>2023/12/05</dt>
+            <dd>本サイトをリリースしました</dd>
+            <dt>2023/12/25</dt>
+            <dd>本サイトを一部修正しました</dd>
+        </dl>
+    </section>
+ </body>
+</html>        
