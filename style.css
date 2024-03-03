@@ -97,16 +97,6 @@ span {
     margin: 50px 200px 0;
 }
 
-.container {
-    scroll-snap-type: y mandatory;
-    overflow: auto;
-    height: 100vh;
-}
-
-section{
-    height: 65vh;
-    scroll-snap-align: center;
-}
 
 /* main */
 #main {
