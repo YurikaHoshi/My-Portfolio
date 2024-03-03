@@ -97,6 +97,7 @@ span {
     margin: 50px 200px 0;
 }
 
+
 /* main */
 #main {
     margin-bottom: 80px;
@@ -164,17 +165,91 @@ span {
     padding: 15px;
 }
 
+/* Contact */
+
+#Contact p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#Contact dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Contact dt {
+    width: 10%;
+    margin-bottom: 10px;   
+}
+
+#Contact dd {
+    width: 85%;
+    margin-bottom: 10px;
+
+}
+
+#Contact dd input,
+#Contact dd textarea {
+    width: 85%;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+}
+
+#Contact dd textarea {
+    height: 10rem;
+}
+
+#Contact .button {
+    text-align: center;   
+}
+
+#Contact .button input {
+    border: 1px solid #808080;
+    background-color: #808080;
+    width: 200px;
+    padding: 15px 0;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+#Contact .button input:hover {
+    background-color: #fff;
+    color: #808080;
+}
+
+/* footer */
+
+#footer ul {
+    border-top: solid 1px rgb(48, 46, 46);
+    padding-bottom: 10px;
+}
+
+#footer p {
+    text-align: center;
+}
+
 /* sp */
 @media screen and (max-width: 600px) {
+    .header-contener {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+
     .site-title {
         margin-top: 20px;
+        line-height: 1.5;
     }
 
   /* header */
     #header {
         flex-direction: column;
         height: auto;
-        line-height: 40px;
+        line-height: 30px;
         margin-top: 20px;
     }
 
@@ -211,5 +286,20 @@ span {
     #news dd {
         width: 100%;
         padding-top: 0;
+    }
+
+    /* Contact */
+    #Contact dl {
+        flex-direction: column;
+    }
+
+    #Contact dt {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #Contact dd {
+        width: 100%;
+
     }
 }
