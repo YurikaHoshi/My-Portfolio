@@ -2,6 +2,10 @@ html {
     font-size: 100%; /* 16px */
 }
 
+html { 
+    scroll-behavior: smooth;
+}
+
 body {
     color: #24292e;
     font-family: "Sawarabi Gothic";
@@ -179,6 +183,7 @@ span {
 #Contact dl {
     display: flex;
     flex-wrap: wrap;
+    margin: 3.5rem auto;
 }
 
 #Contact dt {
@@ -232,9 +237,13 @@ span {
 
 #footer p {
     text-align: center;
-    background-color: #454549;
-    color: #FFFFFF;
+    font-size: .8rem;
+    padding: 2rem;
+}
 
+#footer {
+    background-color: #0b0b0b;
+    color: #fff;
 }
 
 /* sp */
