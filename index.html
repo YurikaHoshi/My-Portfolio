@@ -12,7 +12,7 @@
      href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" 
      rel="stylesheet"
    />
-    <title>YURIKA HOSHI</title>
+    <title>YURIKA HOSHI</title>// cspell:ignore YURIKA HOSHI
  </head>
  <body>
     <!-- Header -->
@@ -24,19 +24,19 @@
     
     <!-- ハンバーガーメニュー -->
         <nav>
-            <button id="js-open-menu" class="btn-menu open-menu">
+            <button id="js-open-menu" class="btn-menu open-menu" title="メニューを開きます">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="80px" viewBox="0 0 50 50">
                     <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
                 </svg>
             </button>
             <div id="menu-panel">
-                <button id="js-close-menu" class="btn-menu close-menu">
+                <button id="js-close-menu" class="btn-menu close-menu" title="メニューを閉じます">
                     <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"  xml:space="preserve">
                         <style type="text/css">
                             .st0{fill:#4B4B4B;}
                         </style>
                         <g>
-                            <polygon class="st0" points="512,52.535 459.467,0.002 256.002,203.462 52.538,0.002 0,52.535 203.47,256.005 0,459.465 
+                            <polygon class="st0" points="512,52.535 459.467,0.002 256.002,203.462 52.538,0.002 0,52.535 203.47,256.005 0,459.465 512,52.535"/>
                                 52.533,511.998 256.002,308.527 459.467,511.998 512,459.475 308.536,256.005 	" style="fill: rgb(75, 75, 75);"></polygon>
                         </g>
                         </svg>
@@ -127,7 +127,7 @@
             <dt><label for="email">メールアドレス</label></dt>
             <dd><input type="email" id="email" /></dd>
             <dt><label for="content">内容</label></dt>
-            <dd><textarea id="feedback" cols="30" rows="10"></textarea></dd>
+            <dd><textarea id="content" cols="30" rows="10"></textarea></dd>
         </dl>
         <div class="button"><input type="submit" value="送信"></div>
      </form>
