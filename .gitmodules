@@ -1,0 +1,3 @@
+[submodule "ubmodules/My-Portfolio"]
+	path = ubmodules/My-Portfolio
+	url = https://github.com/YurikaHoshi/My-Portfolio.git
