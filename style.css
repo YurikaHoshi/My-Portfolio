@@ -8,7 +8,8 @@ html {
 
 body {
     color: #24292e;
-    font-family: "Sawarabi Gothic";
+    font-family: "Sawarabi+Gothic";
+    background-color: #fff; /* 全体背景の色 */
 }
 
 a { 
@@ -48,7 +49,7 @@ span {
 }
 
 .site-title a {
-    color:rgb(76, 131, 104);
+    color:rgb(247, 124, 63);
     
 }
 
@@ -61,13 +62,13 @@ span {
 /* header */
 #header {
     align-items: center; /* 交差軸に対して中央に寄せることができる */
-    height: 150px;
+    height: 120px;
     position: fixed;
     z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
-    background: #ffffff;
+    background: #fff;
     box-sizing: border-box;
 }
 
@@ -109,11 +110,85 @@ span {
 #main img {
     width: 100%;
     max-width: 1920px;
-    height: 400px;
+    height: 600px;
     object-fit: cover; /* 画像が潰れないようにカバーできる */
 }
 
+/* ハンバーガーメニュー　 */
+
+/*開閉ボタン*/
+.btn-menu {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 3;
+    padding: .5rem 1rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.btn-menu svg {
+    margin-top: .25rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+/*閉じるボタン*/
+.close-menu {
+    border: 1px solid aliceblue;
+}
+
+.close-menu svg {
+    fill:aliceblue;
+}
+
+/*スライドメニューパネル*/
+#menu-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    padding: 8rem 2rem 2rem;
+    width: max(32vw, 20rem);
+    height: 100vh;
+    background-color: rgb(223, 148, 90);
+    box-shadow: 0 0 2rem black;
+    /*ハンバガーメニューを押していない状態の場合、画面の外側に配置して見えないようにする*/
+    translate: 100vw;
+}
+
+.menu-list {
+    flex-direction: column;
+    display: flex;
+    list-style: none;
+}
+
+.menu-list li {
+    margin: 1.5rem 0;
+}
+
+.menu-list a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
 /* about */
+.div {
+    text-align: center;
+}
+
+#about img {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+
 #about ul {
     margin-bottom: 30px;
     margin: 0 auto;
@@ -124,10 +199,6 @@ span {
 #about ul li {
     margin-bottom: 3px;
     text-align: left;
-}
-
-#about ul li:first-child {
-    margin-bottom: 30px;
 }
 
 /* works */
@@ -157,19 +228,19 @@ span {
 #news dl {
     display: flex;
     flex-wrap: wrap;
-    border-top: 1px solid #c8c8c8;
+    border-top: 1px solid #000000;
     margin-bottom: 20px;
 }
 
 #news dt {
     width: 20%;
-    border-bottom: 1px solid #c8c8c8;
+    border-bottom: 1px solid #000000;
     padding: 15px;
 }
 
 #news dd {
     width: 80%;
-    border-bottom: 1px solid #c8c8c8;
+    border-bottom: 1px solid #000000;
     padding: 15px;
 }
 
@@ -201,7 +272,7 @@ span {
 #Contact dd input,
 #Contact dd textarea {
     width: 95%;
-    border: 1px solid #dcdcdc;
+    border: 1px solid #000000;
     padding: 10px;
     
 }

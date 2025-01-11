@@ -4,37 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="portfolio1" />
-    <!-- reset.css ress (デフォルトのスタイリングをリセットする機能)-->
+    <script defer src="js/script.js"></script>
+    <!-- reset.css (デフォルトのスタイリングをリセットする機能)-->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link
      href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" 
      rel="stylesheet"
    />
-    <title>starportポートフォリオ</title>
+    <title>YURIKA HOSHI</title>
  </head>
  <body>
     <!-- Header -->
     <header id="header">
         <div class="header-contener">
         <h1 class="site-title">
-            <a href="#"> Star <span>Portfolio</span></a> <!-- spanタグで片方の文字の色を変えることができる -->
+            <a href="#"> Y U R I K A  <span>H O S H I</span></a> <!-- spanタグで片方の文字の色を変えることができる -->
         </h1>
+    
+    <!-- ハンバーガーメニュー -->
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li>
-                    <a 
-                     href="https://www.Instagram.com"
-                     target="_blank"
-                     rel="noopener norefeferrer"
-                     ><img src="./img/insta.png" alt="Instagram" class="icon"
-                /></a>
-                </li>
-            </ul>
+            <button id="js-open-menu" class="btn-menu open-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="80px" viewBox="0 0 50 50">
+                    <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+                </svg>
+            </button>
+            <div id="menu-panel">
+                <button id="js-close-menu" class="btn-menu close-menu">
+                    <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"  xml:space="preserve">
+                        <style type="text/css">
+                            .st0{fill:#4B4B4B;}
+                        </style>
+                        <g>
+                            <polygon class="st0" points="512,52.535 459.467,0.002 256.002,203.462 52.538,0.002 0,52.535 203.47,256.005 0,459.465 
+                                52.533,511.998 256.002,308.527 459.467,511.998 512,459.475 308.536,256.005 	" style="fill: rgb(75, 75, 75);"></polygon>
+                        </g>
+                        </svg>
+                </button>
+                <ul class="menu-list">
+                    <li class="menu-list"><a href="/">About</a></li>
+                    <li class="menu-list"><a href="/">Works</a></li>
+                    <li class="menu-list"><a href="/">News</a></li>
+                    <li class="menu-list"><a href="/">Contact</a></li>
+                    <li>
+                        <a
+                        href="https://www.Instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img src="./img/insta.png" alt="Instagram" class="icon"
+                    /></a>                </li>
+                </ul>
         </nav>
 
     </header>
@@ -43,17 +62,22 @@
     <div id="main">
         <picture>
             <source media="(max-width: 600px)" srcset="./img-sp.jpg" />
-            <img src="./img/main-pc.jpg" alt="" />
+            <img src="./img/himawari2.jpg" alt="" />
         </picture>
     </div>
 
     <!-- about -->
     <section id="about" class="wrapper">
         <h2 class="sec-title">About</h2>
+
+        <div class="grid-center">
+            <img src="./img/yurika.jpg" alt="" />
+        </div>
+
         <ul>
-            <li>名前：星　由利香</li>
-            <li>経歴：HTML/CSS/JavaScript</li>
-            <li>現在：2023年11からプログラミングの
+            <li>名前:星 由利香</li>
+            <li>経歴:HTML/CSS/JavaScript</li>
+            <li>現在:2023年11からプログラミングの
             <li>オンラインスクールに入会し勉強しております。</li>
             <li>現在学んでいる言語はJavaScriptです。</li>
             <li>趣味：カフェ巡り/映画鑑賞</li>
@@ -87,6 +111,8 @@
             <dd>本サイトをリリースしました</dd>
             <dt>2023/12/25</dt>
             <dd>本サイトを一部修正しました</dd>
+            <dt>2025/01/05</dt>
+            <dd>プロフィール画像を追加しました。</dd>
         </dl>
     </section>
 
@@ -101,7 +127,7 @@
             <dt><label for="email">メールアドレス</label></dt>
             <dd><input type="email" id="email" /></dd>
             <dt><label for="content">内容</label></dt>
-            <dd><textarea id="" cols="30" rows="10"></textarea></dd>
+            <dd><textarea id="feedback" cols="30" rows="10"></textarea></dd>
         </dl>
         <div class="button"><input type="submit" value="送信"></div>
      </form>
