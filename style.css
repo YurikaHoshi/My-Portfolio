@@ -259,13 +259,13 @@ span {
 #news dt {
     width: 20%;
     border-bottom: 1px solid #000000;
-    padding: 15px;
+    padding: 20px;
 }
 
 #news dd {
     width: 80%;
     border-bottom: 1px solid #000000;
-    padding: 15px;
+    padding: 20px;
 }
 
 /* Contact */
