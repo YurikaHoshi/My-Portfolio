@@ -275,12 +275,12 @@ span {
     align-items: center;
 }
 
-#Contact p {
+#contact p {
     text-align: center;
     margin-bottom: 20px;
 }
 
-#Contact dl {
+#contact dl {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -288,39 +288,39 @@ span {
     width: 75%;
 }
 
-#Contact dt {
+#contact dt {
     width: 100%;
     margin-bottom: .3rem;
        
 }
 
-#Contact dt label {
+#contact dt label {
     color: #575757;
 }
 
-#Contact dd {
+#contact dd {
     width: 100%;
     margin-bottom: 1.1rem;
 
 }
 
-#Contact dd input,
-#Contact dd textarea {
+#contact dd input,
+#contact dd textarea {
     width: 100%;
     border: 1px solid #8f8f8f;
     padding: 10px;
     
 }
 
-#Contact dd textarea {
+#contact dd textarea {
     height: 10rem;
 }
 
-#Contact .button {
+#contact .button {
     text-align: center;   
 }
 
-#Contact .button input {
+#contact .button input {
     border: 1px solid #808080;
     background-color: #808080;
     width: 200px;
@@ -329,7 +329,7 @@ span {
     transition: all 0.5s;
 }
 
-#Contact .button input:hover {
+#contact .button input:hover {
     background-color: #fff;
     color: #808080;
 }
